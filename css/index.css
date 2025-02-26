@@ -1,12 +1,13 @@
+html{
+	height: 100%;
+}
 body{ 
 	 width:            100%;
 	 min-width:        750px;
 	 margin:           0;
+	 height:           100%;
 }
 .main{
-	 position:         absolute;
-	 top:              0px;
-	 left:             0px;
      text-align:       center;
      width:            100%;
      height:           100%;
@@ -15,104 +16,123 @@ body{
 	 overflow-x:       hidden;
 }
 .mainSub{
-	 position:         absolute;
-	 left:             0px;
-	 top:              0px;
-	 text-align:       center;
-	 width:            100%;
 	 height:           100%;
 	 font-family:      '微软雅黑';
-	 background:       black;
-	 overflow-x:       hidden;
+	 display: flex;
 }
 .header{
-	 position:         absolute;
-	 top:              0px;
-	 width:            100%;
-	 height:           70px;
-	 background:       black;
+	display: flex;
+	 background:       #1e293b;
 	 color:            white;
+	 position: sticky;    /* 设置为粘性定位 */
+}
+.logoAndTitle{
+	flex: 1;
+	height:           70px;
+	margin: 0 70px;
+	display: flex;
+	align-items: center;
 }
 .logo{
-	 position:         absolute;
-	 top:              10px;
-     left:             8%;
-     cursor:           pointer;
+	 margin: 0 20px;
+	 cursor:           pointer;
      width:            160px;
      height:           50px;
 }
+/* 网站标题 */
+.site-title{
+	font-size:        1.3em;
+	color:            white;
+	font-family:      'Segoe UI', '微软雅黑', sans-serif;
+	font-weight:      500;
+	letter-spacing:   1px;
+	cursor:           pointer;
+	margin:           0;
+}
 .arithmetic{
-	position:          relative;
-	top:               60px;
-	width:             90%;
-	height:            500px;
-/*	border:            1px solid red;*/
-	margin:            70px 0 0 70px;
-	
+	display:           flex;
+	justify-content:   space-around;
+	flex-wrap:         wrap;
+	margin:           70px;
+	flex:             1;
 }
 .arithmeticList{
-	width:             18.5%;
-	height:            93%;
+	flex: 1;
 	border:            8px solid white;
-	margin:            20px 0 0 15px;
-	float:             left;
-	background:        #A6C7E8;
+	margin:            20px;
+	/* background:        #A6C7E8; */
+	background-color: #9bc4f1;
 }
 .pictureAndDes{
-	height:            44%;
-	/*border:            1px solid red;*/
-}
-/*.pictureAndDes a{
-	text-decoration:   none;
-}*/
+	height:            60%;
+	}
+
 .picture{
 	width:             100%;
 	height:            80%;
 	cursor:            pointer;
 }
+
 .description{
 	font-size:         1.3em;
 	color:             white;
 	cursor:            pointer;
 	padding-top:       20px;
 }
-.buttonList{
-	margin-top:        16px;
+.buttonList {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 10px; */
 }
-.btn{
-	width:             55%;
-	height:            36px;
-	margin-top:        20px;
-	font-size:         1.2em;
+
+.btn-primary.lineBtn,
+.btn-primary.treeBtn,
+.btn-primary.graphBtn,
+.btn-primary.sortBtn,
+.btn-primary.string {
+    background-color: #b8b8b8;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 5px;
+    transition: all 0.2s ease;
+    box-shadow: none;
+    text-align: center;
 }
-.treeBtn,.graphBtn,.lineBtn{
-	height:            36px;
-	margin-top:        10px;
+
+.btn-primary.lineBtn:hover,
+.btn-primary.treeBtn:hover,
+.btn-primary.graphBtn:hover,
+.btn-primary.sortBtn:hover,
+.btn-primary.string:hover {
+    background-color: #d18282;
+    color: #fff;
 }
-.sortBtn{
-	/*width:             42%;
-	height:            35px;
-	padding-right:     20px;
-	margin-top:        20px;
-	margin-left:       4px;
-	margin-right:      4px;*/
+
+.btn-primary.lineBtn:focus,
+.btn-primary.treeBtn:focus,
+.btn-primary.graphBtn:focus,
+.btn-primary.sortBtn:focus,
+.btn-primary.string:focus {
+    outline: none;
+    box-shadow: none;
 }
-.treeBtn,.lineBtn,.graphBtn{
-	width:             42%;
-	height:            35px;
-	/*padding-right:     20px;*/
-	margin-top:        20px;
-	margin-left:       4px;
-	margin-right:      4px;
+
+/* 移除之前的固定尺寸设置 */
+.treeBtn, .graphBtn, .lineBtn, .sortBtn, .string {
+    height: auto;
+    width: auto;
+    margin-top: 0;
 }
 .navList{
-	position:          relative;
-	top:               12px;
-	left:              400px;
 }
 .nav{
 	margin-right:      100px; 
-	margin-top:        10px;  
 	font-family:       '微软雅黑';
 	font-weight:       550;
 	font-size:         1.3em;
@@ -128,13 +148,15 @@ a hover:{
     color:             white;
 }
 .showBox{
-    width:             93.9%;
-    height:            550px;
-    position:          relative;
-    left:              40px;
-    top:               70px;
-    /*border:            1px solid red;*/
-    background:        #FFFFFF;
+    /* height:            100%; */
+	/* overflow: scroll; */
+	margin-top: 2px;
+	/* background-color: pink; */
+	display: flex;
+	flex-direction: column;
+}
+.showBox #drawing{
+	background-color: #dddada;
 }
 .startHide{
 	width:             42px;
@@ -175,7 +197,6 @@ a hover:{
 }
 .linkedQueueStarts{
 	position:          fixed;
-	/*border:            1px solid red;*/
 	top:               530px;
 	left:              46px;
 	width:             0px;
@@ -216,7 +237,6 @@ a hover:{
 .length input,.serialNumber input,.insertNumber input,.deleteNumber input,
 .stackInsertNumber input,.queueInsertNumber input,.linkedQueueInsertNumber input
 {
-	/*background:        rgb(89,229,89);*/
 	width:             72%;
 	margin-left:       6px;
 }
@@ -288,7 +308,7 @@ a hover:{
 	display:           none;
 	cursor:            pointer; 
 }
-.stateHide{
+/* .stateHide{
 	width:             42px;
 	height:            60px;
 	background:        rgb(252, 100, 34);
@@ -300,7 +320,7 @@ a hover:{
 .stateHide img{
 	position:          relative;
 	top:               20px;
-}
+} */
 .codeHide{
 	width:             42px;
 	height:            200px;
@@ -316,18 +336,20 @@ a hover:{
 	transform:         rotate(180deg);
 }
 .state{
-	position:          fixed;
-	top:               10.5%;
-	right:             47px;
-	height:            60px;
-	width:             350px;
-	background:        rgb(252, 100, 34);
+	flex: 1;
+	background:        rgb(185, 120, 92);
 	color:             white;
     font-size:         1em;
 }
 .state p{
-	height:            80%;
-	margin:            6px auto;
+	/* background-color: pink; */
+	/* height:            80%; */
+	/* margin:            6px auto; */
+	padding-left: 25px;
+	font-size: 1.3em;
+	font-weight: 500;
+
+
 }
 .codes{
 	position:          fixed;
@@ -615,4 +637,193 @@ input{
 	color:             white;
 	font-size:         1em;
 	text-align:        center;
+}
+
+/* Footer 样式 */
+.footer {
+	width: 100%;
+    background-color: #1e293b;
+    color: #f8fafc;
+    padding: 10px 0 5px;  /* 减小上下内边距 */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h3, .footer-about h3 {
+    color: #60a5fa;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 5px;  /* 减小底部内边距 */
+    margin-bottom: 10px;  /* 减小底部外边距 */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+	display: inline;
+    margin-bottom: 5px;  /* 减小底部外边距 */
+}
+
+.footer-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+}
+
+.footer-about {
+    flex: 2;
+    min-width: 300px;
+}
+
+.footer-about p {
+    margin-bottom: 10px;  /* 减小底部外边距 */
+    line-height: 1.4;     /* 减小行高 */
+    color: #cbd5e1;
+}
+
+.footer-about a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.footer-about a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;    /* 减小顶部内边距 */
+    margin-top: 10px;     /* 减小顶部外边距 */
+    border-top: 1px solid #334155;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    color: #94a3b8;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-logo, .footer-links, .footer-about {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* 简介部分样式 */
+.intro-section {
+    background-color: #eeeeee;
+    /* padding: 50px 0; */
+    /* margin-bottom: 30px; */
+}
+
+.intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-title {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.intro-divider {
+    height: 4px;
+    width: 70px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    margin: 0 auto;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro-image {
+    flex: 0 0 40%;
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text-container {
+    flex: 0 0 60%;
+}
+
+.intro-text {
+    color: #34495e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro-text.highlight {
+    font-weight: 500;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+    color: #2980b9;
+}
+
+.intro-cta {
+    margin-top: 30px;
+}
+
+.start-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 媒体查询 - 响应式设计 */
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+    }
+    
+    .intro-image, .intro-text-container {
+        flex: 0 0 100%;
+    }
+    
+    .intro-image {
+        margin-bottom: 30px;
+    }
 }

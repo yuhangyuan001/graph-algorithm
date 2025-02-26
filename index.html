@@ -13,7 +13,39 @@
 <body>
 	<div class="main">
 		<div class="header">
-			<img class="logo" src="image/logo.png" alt="logo" onclick="window.location.href='index.html'"/>
+			<div class="logoAndTitle">
+				<img class="logo" src="image/logo.png" alt="logo" onclick="window.location.href='index.html'"/>
+				<div class="site-title">算法可视化平台</div>
+			</div>
+		</div>
+		<!-- 网站简介 -->
+		<div class="intro-section">
+			<div class="intro-container">
+				<div class="intro-header">
+					<h2 class="intro-title">欢迎来到算法可视化平台</h2>
+					<div class="intro-divider"></div>
+				</div>
+				<div class="intro-content">
+					<div class="intro-image">
+						<img src="image/algorithm-visual.png" alt="算法可视化示例" />
+					</div>
+					<div class="intro-text-container">
+						<p class="intro-text">
+							本平台为您提供了丰富的算法可视化工具，帮助您直观理解各种数据结构和算法的工作原理。
+							通过交互式动画，您可以清晰地观察算法的执行过程，加深对算法的理解和记忆。
+						</p>
+						<p class="intro-text highlight">
+							无论您是计算机专业学生、编程爱好者还是算法学习者，这里都能满足您探索算法世界的需求。
+						</p>
+						<p class="intro-text">
+							从基础的线性表、树结构、图算法到常见的排序和搜索算法，我们覆盖了计算机科学中最核心的算法内容。
+						</p>
+						<div class="intro-cta">
+							<button class="btn btn-primary btn-lg start-btn">开始您的算法之旅</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="arithmetic">
 			<div class="arithmeticList">
@@ -53,8 +85,7 @@
 				    <a href="graph/graphDFSTraverse.html" id="plink" style="text-decoration:none;">
 					<img src="image/图.jpg" alt="" class="picture"/>
 					<p class="description">图</p>
-			      </a>
-				</div>
+			      </a>				</div>
 				<div class="buttonList">
 					<button type="button" id="graphDFSTraverse" class="btn btn-primary graphBtn" onclick="window.location.href='graph/graphDFSTraverse.html'">DFS遍历</button>
 					<button type="button" id="graphBFSTraverse" class="btn btn-primary graphBtn" onclick="window.location.href='graph/graphBFSTraverse.html'">BFS遍历</button>
@@ -94,13 +125,35 @@
 				</div>
 				<div class="buttonList">
 					<button type="button" class="btn btn-primary string" id="patternMatch" onclick="window.location.href='string/patternMatch.html'">模式匹配</button>
-					<button type="button" class="btn btn-primary " id="sequentialSearch" onclick="window.location.href='string/search.html'">查找</button>
+					<button type="button" class="btn btn-primary string" id="sequentialSearch" onclick="window.location.href='string/search.html'">查找</button>
 					<!-- <button type="button" class="btn btn-primary " id="binarySearch" onclick="window.location.href='string/stringMatch.html'">二分查找</button> -->
 					<!-- <button type="button" class="btn btn-primary " onclick="">哈希查找</button> -->
 				</div>
 			</div>
 		</div>
+		
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-links">
+					<h3>快速导航</h3>
+					<ul>
+						<li><a href="list/linearList.html">线性表</a></li>
+						<li><a href="tree/BST.html">树结构</a></li>
+						<li><a href="graph/graphDFSTraverse.html">图算法</a></li>
+						<li><a href="sort/compareSort.html">排序算法</a></li>
+					</ul>
+				</div>
+				<div class="footer-about">
+					<h3>关于我们</h3>
+					<p>如有问题或建议，请联系我们：<a href="3171231289@qq.com">3171231289@qq.com</a></p>
+				</div>
+			</div>
+			<!-- <div class="footer-bottom">
+				<p>© 2025 算法可视化平台 版权所有</p>
+			</div> -->
+		</footer>
 	</div>
+	
 	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256898616'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256898616%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 </body>
 </html>

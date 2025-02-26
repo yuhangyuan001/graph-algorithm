@@ -12,6 +12,7 @@ var directedGraphCurveWithDoubleEdge = 0.15;	// 两个顶点之间有两条边�
 var undirectedGraphCurve = 0.0;
 var initialVertexNum = 6;	// 图初始的顶点数量
 function init() {
+	// 初始化对象管理器：创建物体，设置物体位置，移除物体
 	objectManager = new ObjectManager() ;
 	animationManager = new AnimationManager(objectManager) ;
 	currentGraph = new Graph(animationManager, drawing.width, drawing.height);

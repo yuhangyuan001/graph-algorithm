@@ -1,0 +1,14 @@
+/* 网站标题 */
+.site-title{
+	position:         absolute;
+	top:              20px;
+	left:             calc(8% + 180px); /* logo左侧位置 + logo宽度 + 间距 */
+	font-size:        1.3em;
+	color:            white;
+	font-family:      'Segoe UI', '微软雅黑', sans-serif;
+	font-weight:      500;
+	letter-spacing:   1px;
+	text-shadow:      0 1px 2px rgba(0,0,0,0.3);
+	cursor:           pointer;
+	margin:           0;
+} 
