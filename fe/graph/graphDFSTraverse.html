@@ -37,6 +37,7 @@
     ></script>
     <script type="application/javascript" src="../js/Algorithm.js"></script>
     <script type="application/javascript" src="../js/DFS.js"></script>
+    <!-- <script type="application/javascript" src="../js/aichat.js"></script> -->
     <link rel="shortcut icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" type="text/css" href="../css/graph.css" />
@@ -142,24 +143,27 @@
           <p>💡状态</p>
           <p>💡步骤说明</p>
         </div>
-		<div class="controlBar">
-			<span>💡控制速度</span>
-			<input
-			  type="range"
-			  name="controlSlider"
-			  id="controlSlider"
-			  min="1"
-			  max="100"
-			  value="60"
-			  onchange="setAnimationSpeed(this.value);"
-			/>
-		  </div>
+        <div class="controlBar">
+          <span>💡控制速度</span>
+          <input
+            type="range"
+            name="controlSlider"
+            id="controlSlider"
+            min="1"
+            max="100"
+            value="60"
+            onchange="setAnimationSpeed(this.value);"
+          />
+        </div>
       </div>
-	  <div class="aiChat">
-		ai接入
-	  </div>
+      <div class="chat-container">
+        <h2>AI聊天</h2>
+        <div class="messages" id="messages"></div>
+        <input type="text" id="userInput" placeholder="输入您的消息..." />
+        <button id="sendButton">发送</button>
+      </div>
     </div>
-    
+
     <script type="text/javascript">
       var cnzz_protocol =
         "https:" == document.location.protocol ? " https://" : " http://";
