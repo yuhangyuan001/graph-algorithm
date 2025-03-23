@@ -1,548 +1,237 @@
-.graphDFSStarts{
-	width:             240px;
-	background:        #1e293bdd;
-	cursor:            pointer; 
+.graphDFSStarts,
+.graphBFSStarts,
+.primStarts,
+.kruStarts,
+.dijStarts {
+	width: 240px;
+	background: #1e293bdd;
+	cursor: pointer;
 	padding-left: 30px;
 	margin-top: 2px;
 }
-.graphDFSStarts p{
-	text-align:        left;
-    color:             white;
-    font-size:         1.5em;
-    width:             100%;
-    padding-top:       18px;
-    padding-bottom:    6px;
-    margin:            0px;
+
+.graphDFSStarts p,
+.graphBFSStarts p,
+.primStarts p,
+.kruStarts p,
+.dijStarts p {
+	text-align: left;
+	color: white;
+	font-size: 1.5em;
+	width: 100%;
+	padding-top: 18px;
+	padding-bottom: 6px;
+	margin: 0px;
 	/* background-color: pink; */
 }
-.peakNum{
-	width:             200px;
-	height:            35px;
-	cursor:            pointer; 
+
+.peakNum,
+.peakPrimNum,
+.peakKruNum,
+.peakDijNum {
+	width: 200px;
+	height: 35px;
+	cursor: pointer;
 }
 
-.peakNum span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
+.peakNum span,
+.peakPrimNum span,
+.peakKruNum span,
+.peakDijNum span {
+	font-size: 1em;
+	color: white;
+	display: inline-block;
+	margin-top: 5px;
 	/* text-indent: 2rem; */
 }
-.peakNum input{
-	width:             60%;
+
+.peakNum input,
+.peakPrimNum input,
+.peakKruNum input,
+.peakDijNum input {
+	width: 60%;
 }
-.createGraph{
-	width:             90px;
-	height:            35px;
-	cursor:            pointer; 
+
+.createGraph,
+.createPrimGraph,
+.createKruGraph,
+.createDijGraph {
+	width: 90px;
+	height: 35px;
+	cursor: pointer;
 }
-.startPeak{
-	width:             150px;
-	height:            35px;
+
+.startPeak,
+.startPrimPeak,
+.startKruPeak,
+.startDijPeak {
+	width: 150px;
+	height: 35px;
 	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer; 
+	cursor: pointer;
 }
-.startPeak span,.endPeak span,.weight span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
+
+.startPeak span,
+.endPeak span,
+.weight span,
+.startPrimPeak span,
+.endPrimPeak span,
+.weightPrim span,
+.startKruPeak span,
+.endKruPeak span,
+.weightKru span,
+.startDijPeak span,
+.endDijPeak span,
+.weightDij span {
+	font-size: 1em;
+	color: white;
+	display: inline-block;
+	margin-top: 5px;
 }
-.startPeak input,.endPeak input,.weight input{
-	width:             65%;
+
+.startPeak input,
+.endPeak input,
+.weight input,
+.startPrimPeak input,
+.endPrimPeak input,
+.weightPrim input,
+.startKruPeak input,
+.endKruPeak input,
+.weightKru input,
+.startDijPeak input,
+.endDijPeak input,
+.weightDij input {
+	width: 65%;
 }
-.endPeak{
-	width:             150px;
-	height:            35px;
+
+.endPeak,
+.endPrimPeak,
+.endKruPeak,
+.endDijPeak {
+	width: 150px;
+	height: 35px;
 	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer; 
+	cursor: pointer;
 }
-.weight{
-	width:             150px;
-	height:            35px;
+
+.weight,
+.weightPrim,
+.weightKru,
+.weightDij {
+	width: 150px;
+	height: 35px;
 	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer; 
+	cursor: pointer;
 }
-.addEdge{
-	width:             60px;
-	height:            35px;
+
+.addEdge,
+.addPrimEdge,
+.addKruEdge,
+.addDijEdge {
+	width: 60px;
+	height: 35px;
 	/* background:        rgb(89,229,89); */
-	cursor:            pointer; 
+	cursor: pointer;
 }
-.addEdge span,.deleteEdge span,.createGraph span,.runTraverse span{
-	width:             100%;
-	color:             white;
+
+.addEdge span,
+.deleteEdge span,
+.createGraph span,
+.runTraverse span,
+.createPrimGraph span,
+.addPrimEdge span,
+.deletePrimEdge span,
+.createKruGraph span,
+.addKruEdge span,
+.deleteKruEdge span,
+.createDijGraph span,
+.addDijEdge span,
+.deleteDijEdge span {
+	width: 100%;
+	color: white;
 	border-bottom: 1px solid white;
-	font-size:         0.9em;
+	font-size: 0.9em;
 }
-.addEdge span:hover,.deleteEdge span:hover,.createGraph span:hover,.runTraverse span:hover{
-	color:  #2980b9;
+
+.addEdge span:hover,
+.deleteEdge span:hover,
+.createGraph span:hover,
+.createPrimGraph span:hover,
+.runTraverse span:hover,
+.addPrimEdge span:hover,
+.deletePrimEdge span:hover,
+.createKruGraph span:hover,
+.addKruEdge span:hover,
+.deleteKruEdge span:hover,
+.createDijGraph span:hover,
+.addDijEdge span:hover,
+.deleteDijEdge span:hover {
+	color: #2980b9;
 }
-.deleteEdge{
-	width:             60px;
-	height:            35px;
+
+.deleteEdge,
+.deletePrimEdge,
+.deleteKruEdge,
+.deleteDijEdge {
+	width: 60px;
+	height: 35px;
 	/* background:        rgb(89,229,89); */
-	cursor:            pointer; 
+	cursor: pointer;
 }
-.runPeak{
-	width:             200px;
-	height:            35px;
+
+.runPeak,
+.runPrimPeak,
+.runDijPeak {
+	width: 200px;
+	height: 35px;
 	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer;
+	cursor: pointer;
 }
-.runPeak span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
+
+.runPeak span,
+.runPrimPeak span,
+.runDijPeak span {
+	font-size: 1em;
+	color: white;
+	display: inline-block;
+	margin-top: 5px;
 }
-.runPeak input{
-	width:             40%;
+
+.runPeak input,
+.runPrimPeak input,
+.runDijPeak input {
+	width: 40%;
 }
-.runTraverse{
-	width:             80px;
-	height:            35px;
+
+.runTraverse {
+	width: 80px;
+	height: 35px;
 	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer;
+	cursor: pointer;
 }
-.selection{
-	width:             200px;
-	height:            35px;
+
+.selection,
+.dirDijGraph {
+	width: 200px;
+	height: 35px;
 	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer;
+	cursor: pointer;
 }
-.selection span,.dirGraph span{
-    font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
+
+.selection span,
+.dirGraph span,
+.dirDijGraph span {
+	font-size: 1em;
+	color: white;
+	display: inline-block;
+	margin-top: 5px;
 }
-.dirGraph{
-	width:             200px;
-	height:            35px;
+
+.dirGraph {
+	width: 200px;
+	height: 35px;
 	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer;
-}
-.primStartHide{
-	width:             42px;
-	height:            105px;
-	/* background:        rgb(89, 229, 89); */
-	position:          fixed;
-	left:              0px;
-	top:               495px;
-	cursor:            pointer;
-}
-.primStartHide img{
-	position:          relative;
-	top:               47px;
-}
-.primStarts{
-	width:             0px;
-	height:            105px;
-	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer; 
-	display:           none;
-}
-.primStarts p{
-	text-align:        left;
-    color:             white;
-    font-size:         1em;
-    width:             100%;
-    padding-top:       8px;
-    padding-bottom:    6px;
-    margin:            0px;
-    text-indent:       1.5em;
-}
-.peakPrimNum{
-	width:             200px;
-	height:            35px;
-	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer; 
-}
-.peakPrimNum span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.peakPrimNum input{
-	width:             60%;
-	/*margin-left:       3px;*/
-}
-.createPrimGraph{
-	width:             100px;
-	height:            35px;
-	/* background:        rgb(89,229,89); */
-	cursor:            pointer; 
-}
-.startPrimPeak{
-	width:             150px;
-	height:            35px;
-	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer; 
-}
-.startPrimPeak span,.endPrimPeak span,.weightPrim span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.startPrimPeak input,.endPrimPeak input,.weightPrim input{
-	width:             65%;
-}
-.endPrimPeak{
-	width:             150px;
-	height:            35px;
-	/* background:        rgb(89, 229, 89); */
-	cursor:            pointer; 
-}
-.weightPrim{
-	width:             150px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer; 
-}
-.addPrimEdge{
-	width:             80px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	cursor:            pointer; 
-}
-.addPrimEdge p,.deletePrimEdge p,.createPrimGraph p,.runTraverse p{
-	width:             100%;
-	margin-top:        8px;
-	color:             white;
-	font-size:         1em;
-	text-align:        center;
-}
-.deletePrimEdge{
-	width:             80px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	cursor:            pointer; 
-}
-.runPrimPeak{
-	width:             200px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer;
-}
-.runPrimPeak span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.runPrimPeak input{
-	width:             40%;
-}
-.Prim{
-	width:             80px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	cursor:            pointer;
-}
-.kruStartHide{
-	width:             42px;
-	height:            105px;
-	background:        rgb(89, 229, 89);
-	position:          fixed;
-	left:              0px;
-	top:               495px;
-	cursor:            pointer;
-}
-.kruStartHide img{
-	position:          relative;
-	top:               47px;
-}
-.kruStarts{
-	width:             0px;
-	height:            105px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer; 
-}
-.kruStarts p{
-	text-align:        left;
-    color:             white;
-    font-size:         1em;
-    width:             100%;
-    padding-top:       8px;
-    padding-bottom:    6px;
-    margin:            0px;
-    text-indent:       1.5em;
-}
-.peakKruNum{
-	width:             200px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer; 
-}
-.peakKruNum span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.peakKruNum input{
-	width:             60%;
-	/*margin-left:       3px;*/
-}
-.createKruGraph{
-	width:             100px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	cursor:            pointer; 
-}
-.startKruPeak{
-	width:             150px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer; 
-}
-.startKruPeak span,.endKruPeak span,.weightKru span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.startKruPeak input,.endKruPeak input,.weightKru input{
-	width:             65%;
-}
-.endKruPeak{
-	width:             150px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer; 
-}
-.weightKru{
-	width:             150px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer; 
-}
-.addKruEdge{
-	width:             80px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	cursor:            pointer; 
-}
-.addKruEdge p,.deleteKruEdge p,.createKruGraph p,.runTraverse p{
-	width:             100%;
-	margin-top:        8px;
-	color:             white;
-	font-size:         1em;
-	text-align:        center;
-}
-.deleteKruEdge{
-	width:             80px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	cursor:            pointer; 
-}
-.runKruPeak{
-	width:             200px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer;
-}
-.runKruPeak span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.runKruPeak input{
-	width:             40%;
-}
-.Kruskal{
-	width:             150px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	cursor:            pointer;
-}
-.dijStartHide{
-	width:             42px;
-	height:            140px;
-	background:        rgb(89, 229, 89);
-	position:          fixed;
-	left:              0px;
-	top:               460px;
-	cursor:            pointer;
-}
-.dijStartHide img{
-	position:          relative;
-	top:               65px;
-}
-.dijStarts{
-	position:          fixed;
-	top:               460px;
-	left:              46px;
-	width:             0px;
-	height:            140px;
-	background:        rgb(89, 229, 89);
-	cursor:            pointer; 
-	display:           none;
-}
-.dijStarts p{
-	text-align:        left;
-    color:             white;
-    font-size:         1em;
-    width:             100%;
-    padding-top:       8px;
-    padding-bottom:    6px;
-    margin:            0px;
-    text-indent:       1.5em;
-}
-.peakDijNum{
-	position:          fixed;
-	top:               460px;
-	left:              190px;
-	width:             200px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	display:           none;
-	cursor:            pointer; 
-}
-.peakDijNum span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.peakDijNum input{
-	width:             60%;
-	/*margin-left:       3px;*/
-}
-.createDijGraph{
-	position:          fixed;
-	left:              394px;
-	top:               460px;
-	width:             100px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	display:           none;
-	cursor:            pointer; 
-}
-.startDijPeak{
-	position:          fixed;
-	top:               495px;
-	left:              190px;
-	width:             150px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	display:           none;
-	cursor:            pointer; 
-}
-.startDijPeak span,.endDijPeak span,.weightDij span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.startDijPeak input,.endDijPeak input,.weightDij input{
-	width:             65%;
-}
-.endDijPeak{
-	position:          fixed;
-	top:               495px;
-	left:              344px;
-	width:             150px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	display:           none;
-	cursor:            pointer; 
-}
-.weightDij{
-	position:          fixed;
-	top:               495px;
-	left:              498px;
-	width:             150px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	display:           none;
-	cursor:            pointer; 
-}
-.addDijEdge{
-	position:          fixed;
-	left:              652px;
-	top:               495px;
-	width:             80px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	display:           none;
-	cursor:            pointer; 
-}
-.addDijEdge p,.deleteDijEdge p,.createDijGraph p,.runTraverse p{
-	width:             100%;
-	margin-top:        8px;
-	color:             white;
-	font-size:         1em;
-	text-align:        center;
-}
-.deleteDijEdge{
-	position:          fixed;
-	left:              736px;
-	top:               495px;
-	width:             80px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	display:           none;
-	cursor:            pointer; 
-}
-.runDijPeak{
-	position:          fixed;
-	top:               530px;
-	left:              190px;
-	width:             200px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	display:           none;
-	cursor:            pointer;
-}
-.runDijPeak span{
-	font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.runDijPeak input{
-	width:             40%;
-}
-.Dijkstra{
-	position:          fixed;
-	left:              394px;
-	top:               530px;
-	width:             150px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	display:           none;
-	cursor:            pointer;
-}
-.Floyd{
-	position:          fixed;
-	left:              190px;
-	top:               530px;
-	width:             150px;
-	height:            35px;
-	background:        rgb(89,229,89);
-	display:           none;
-	cursor:            pointer;
-}
-.dirDijGraph span{
-    font-size:         1em;
-	color:             white;
-	display:           inline-block;
-	margin-top:        5px;
-}
-.dirDijGraph{
-	position:          fixed;
-	top:               565px;
-	left:              190px;
-	width:             200px;
-	height:            35px;
-	background:        rgb(89, 229, 89);
-	display:           none;
-	cursor:            pointer;
+	cursor: pointer;
 }
 
 .chat-container {
@@ -551,9 +240,10 @@
 	padding: 10px;
 	max-width: 400px;
 	/* margin: auto; */
-	flex:1;
+	flex: 1;
 	height: 98%;
 }
+
 .messages {
 	max-height: 70%;
 	overflow-y: auto;
@@ -563,55 +253,66 @@
 	/* background-color: green; */
 	height: 65%;
 }
+
 .message {
 	margin: 5px 0;
-    clear: both; /* 确保每条消息都在新行上 */
+	clear: both;
+	/* 确保每条消息都在新行上 */
 }
+
 .user-message {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
 	text-align: right;
 }
-.user-message span{
+
+.user-message span {
 	padding-top: 5px;
 	color: blue;
 }
-.user-avatar{
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	margin:  0 5px;
-}
-.user-message p{
-	font-size: 12px;
-	color: #999;
-}
-.ai-message {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
-.ai-message span{
-	color: green;
-	padding-top: 5px;
-}
-.ai-avatar{
+
+.user-avatar {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	margin: 0 5px;
 }
-.ai-message p{
+
+.user-message p {
 	font-size: 12px;
 	color: #999;
 }
 
-#userInput{
+.ai-message {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.ai-message span {
+	color: green;
+	padding-top: 5px;
+}
+
+.ai-avatar {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+.ai-message p {
+	font-size: 12px;
+	color: #999;
+}
+
+#userInput {
 	width: 80%;
 	height: 40px;
 }
-#sendButton{
+
+#sendButton {
 	height: 40px;
 	width: 15%;
 }

@@ -1250,7 +1250,7 @@ $(function () {
             $('.avlNumber').val('');
         }
     });
-	*/
+  */
   // 随机生成
   $(".avlAction").click(function () {
     init();
@@ -1456,17 +1456,17 @@ $(function () {
   });
   //自动演示
   /*$('#autoBT2T').click(function(){
-		//alert("Inner function2 canAutoPlay" + canAutoPlay);
-		if(canAutoPlay == 1){
-        	currentBT2T.autoBTreeToTree();
-			canInsert = 0;
+    //alert("Inner function2 canAutoPlay" + canAutoPlay);
+    if(canAutoPlay == 1){
+          currentBT2T.autoBTreeToTree();
+      canInsert = 0;
             canAutoPlay = 0;
-		}
-		else{
-			// alert("请刷新");
+    }
+    else{
+      // alert("请刷新");
             init();
             currentBT2T.autoBTreeToTree();
-		}
+    }
     });*/
 
   // 自动演示
