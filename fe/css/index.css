@@ -15,7 +15,7 @@ body {
 	height: 100%;
 	font-family: '微软雅黑';
 	/* background: #eeeeee; */
-	background: linear-gradient(to left, #ffffff, #e6f0ff);
+	background: linear-gradient(to right bottom, #ffffff, #d9e6fa);
 	overflow-x: hidden;
 }
 
@@ -28,6 +28,7 @@ body {
 .header {
 	display: flex;
 	background: #2c3e50;
+	/* background: linear-gradient(to right, #000000b4, #d8dde1); */
 	color: white;
 	position: sticky;
 	/* 设置为粘性定位 */

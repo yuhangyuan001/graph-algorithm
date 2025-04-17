@@ -49,7 +49,7 @@
 .peakPrimNum input,
 .peakKruNum input,
 .peakDijNum input {
-	width: 60%;
+	width: 40%;
 }
 
 .createGraph,
@@ -127,10 +127,13 @@
 .addEdge,
 .addPrimEdge,
 .addKruEdge,
-.addDijEdge {
-	width: 60px;
+.addDijEdge ,
+.deleteEdge,
+.deletePrimEdge,
+.deleteKruEdge,
+.deleteDijEdge{
+	width: 100px;
 	height: 35px;
-	/* background:        rgb(89,229,89); */
 	cursor: pointer;
 }
 
@@ -169,15 +172,14 @@
 	color: #2980b9;
 }
 
-.deleteEdge,
+/* .deleteEdge,
 .deletePrimEdge,
 .deleteKruEdge,
 .deleteDijEdge {
 	width: 60px;
 	height: 35px;
-	/* background:        rgb(89,229,89); */
 	cursor: pointer;
-}
+} */
 
 .runPeak,
 .runPrimPeak,
@@ -204,9 +206,8 @@
 }
 
 .runTraverse {
-	width: 80px;
+	width: 120px;
 	height: 35px;
-	/* background:        rgb(89, 229, 89); */
 	cursor: pointer;
 }
 
